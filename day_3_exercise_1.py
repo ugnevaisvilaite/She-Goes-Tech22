@@ -2,7 +2,7 @@
 
 # Ask user for their temperature.
 
-temp = int(input ("What us your temperature?"))
+temp = float(input ("What us your temperature? "))
 
 # If the user enters below 35, then output "not too cold"
 if temp < 35 :
