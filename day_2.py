@@ -30,5 +30,3 @@
 # print (f"Cool {a} doubled is {float_square}") # get number
 
 
-
-
