@@ -8,9 +8,9 @@
 #  Note: such a task became popular as the first task to ask to determine 
 #  whether a person knows about programming at all smile
 
-# start = 1
-# end = 100
-# final_list = ""
+start = 1
+end = 100
+final_list = ""
 
 for i in range(start,end+1):
     if i!=end:
@@ -39,17 +39,19 @@ print(final_list)
 
 # Note: remember that several symbols can be printed at once, for example: print ("" * 10 + "*" * 6)
 
-from asyncio import start_server
 
 
-height = int(input("Enter positive number for Christmas three height or quit ('q'): "))
-for i in range(height):
-    if height == "q":
-        break
-    # elif height.isalpha():
-    #     print("Height can't be a letter ")
-    #     continue 
-    empty = height 
-    stars = 1 
-    print(" " * (empty - i - 1) + "*" * (stars + i * 2))
+height = input("Enter positive number for Christmas three height or quit ('q'): ")
+if height == "q":
+        print("Goodbye")
+elif height.isalpha():
+    print("Height can't be a letter ")
+else:
+    height = int(height)
+    for i in range(height):
+        empty = height
+        stars = 1 
+        print(" " * (empty - i - 1) + "*" * (stars + i * 2))
+  
+  
               
