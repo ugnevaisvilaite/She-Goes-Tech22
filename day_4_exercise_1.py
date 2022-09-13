@@ -12,16 +12,16 @@
 # end = 100
 # final_list = ""
 
-# for i in range(start,end+1):
-#     if i%5==0:
-#         final_list += "FIZZ"
-#     if i%7==0:
-#         final_list += "BUZZ"
-#     if not (i%5==0 or i%7==0):
-#         final_list += str(i)
-#     if i!=end:
-#         final_list += ","  #Any other way to add comma?
-# print(final_list)
+for i in range(start,end+1):
+    if i!=end:
+            final_list += "," #any other way to add comma?
+    if i%5==0:
+        final_list += "FIZZ"
+    if i%7==0:
+        final_list += "BUZZ"
+    if not (i%5==0 or i%7==0):
+        final_list += str(i)
+print(final_list)
 
 #  2. Christmas tree 
 
@@ -39,15 +39,17 @@
 
 # Note: remember that several symbols can be printed at once, for example: print ("" * 10 + "*" * 6)
 
-height = 0
- 
-while True:
-    request = ("Enter positive number for Christmas three height or quit ('q'): ")
-    if request == "q":
+from asyncio import start_server
+
+
+height = int(input("Enter positive number for Christmas three height or quit ('q'): "))
+for i in range(height):
+    if height == "q":
         break
-    elif request[0].isalpha():
-        print("Height can't be a letter ")
-        continue 
-    for i in range(height):
-        print(" " * (height-i) + ("*" * i)
+    # elif height.isalpha():
+    #     print("Height can't be a letter ")
+    #     continue 
+    empty = height 
+    stars = 1 
+    print(" " * (empty - i - 1) + "*" * (stars + i * 2))
               
