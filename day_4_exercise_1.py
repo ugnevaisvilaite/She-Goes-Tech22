@@ -49,5 +49,5 @@ while True:
         print("Height can't be a letter ")
         continue 
     for i in range(height):
-        print(" " * (height-1-i) + ("*" * i * 2)
+        print(" " * (height-i) + ("*" * i)
               
