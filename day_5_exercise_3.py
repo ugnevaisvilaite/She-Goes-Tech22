@@ -9,10 +9,6 @@
 # Exception: if the words in the input are not .... bad, 
 # then the output is not ...  bad section must be changed to is good
 
-from calendar import c
-from hashlib import new
-
-
 text=input("Enter your text: ")
 
 first_word = text.rfind("not")    #any difference between find and rfind
