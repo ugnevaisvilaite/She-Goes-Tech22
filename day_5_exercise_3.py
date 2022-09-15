@@ -10,8 +10,8 @@
 # then the output is not ...  bad section must be changed to is good
 
 text=input("Enter your text: ")
-
-first_word = text.rfind("not")    #any difference between find and rfind
+word="not"
+first_word = text.rfind(word)    #any difference between find and rfind
 second_word = text.rfind("bad")
 new_word = "good"
 

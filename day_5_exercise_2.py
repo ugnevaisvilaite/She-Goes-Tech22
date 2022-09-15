@@ -29,6 +29,8 @@ guess = input("Enter your guess: ")
 for c in text:
     if c == guess:
         guess_word += c
+    elif c == ' ':
+        guess_word += " "
     else:
         guess_word += "_"
 print(guess_word) 
