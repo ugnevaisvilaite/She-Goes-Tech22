@@ -8,20 +8,20 @@
 #  Note: such a task became popular as the first task to ask to determine 
 #  whether a person knows about programming at all smile
 
-start = 1
-end = 100
-final_list = ""
+# start = 1
+# end = 100
+# final_list = ""
 
-for i in range(start,end+1):
-    if i!=end:
-            final_list += "," #any other way to add comma?
-    if i%5==0:
-        final_list += "FIZZ"
-    if i%7==0:
-        final_list += "BUZZ"
-    if not (i%5==0 or i%7==0):
-        final_list += str(i)
-print(final_list)
+# for i in range(start,end+1):
+#     if i!=end:
+#             final_list += "," #any other way to add comma?
+#     if i%5==0:
+#         final_list += "FIZZ"
+#     if i%7==0:
+#         final_list += "BUZZ"
+#     if not (i%5==0 or i%7==0):
+#         final_list += str(i)
+# print(final_list)
 
 #  2. Christmas tree 
 
@@ -41,17 +41,37 @@ print(final_list)
 
 
 
-height = input("Enter positive number for Christmas three height or quit ('q'): ")
-if height == "q":
-        print("Goodbye")
-elif height.isalpha():
-    print("Height can't be a letter ")
-else:
-    height = int(height)
-    for i in range(height):
-        empty = height
-        stars = 1 
-        print(" " * (empty - i - 1) + "*" * (stars + i * 2))
+# height = input("Enter positive number for Christmas three height or quit ('q'): ")
+# if height == "q":
+#         print("Goodbye")
+# elif height[0].isalpha():
+#     print("Height can't be a letter ")
+# else:
+#     height = int(height)
+#     for i in range(height):
+#         empty = height
+#         stars = 1 
+#         print(" " * (empty - i - 1) + "*" * (stars + i * 2))
   
-  
-              
+ # 3. Primes Check if entered positive number is a prime number.
+
+#  A prime number is a number that divides without remainder only by itself and 1.
+
+# Hint: what numbers do we have to check?
+
+
+from re import T
+
+
+prime = int(input("Enter number to check if it is prime: "))
+flag = True
+
+if prime > 1:
+    for i in range(2, prime+1):
+        if prime % i == 0:
+            flag = False
+            print("That's not prime number")
+            break
+        elif prime % i != 0:
+            print("Its a prime number")
+            break
