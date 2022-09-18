@@ -1,14 +1,10 @@
-# 2. Almost Hangman
+# If the letter is found, then the letter is displayed in ALL the appropriate places, all other letters remain asterisks.
+#If game is on
+#know how many guesses
+#set word/guess word
+#if wrong guess_chances -=1
+#if correct: another guess
 
-# Write a program to recognize a text symbol
-
-# The user (first player) enters the text.
-
-# Only asterisks instead of letters are output.
-
-# Assume that there are no numbers, but there may be spaces.
-
-# The user (i.e. the other player) enters the symbol.
 
 text = input("Enter your set word: ")
 set_word = ""
