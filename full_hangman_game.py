@@ -7,6 +7,7 @@
 
 
 text = input("Enter your set word: ")
+chances = input("Enter how many guesses available:")
 set_word = ""
 guess_word = ""
 
@@ -17,13 +18,21 @@ for c in text:
         set_word += "_"
 print(set_word)
 
-guess = input("Enter your guess: ")
+game_status = False
 
-for c in text:
-    if c == guess:
-        guess_word += c
-    elif c == ' ':
-        guess_word += " "
-    else:
-        guess_word += "_"
-print(guess_word) 
+while not game_status:
+    guess = int(input("Enter your guess: "))
+    while guess > 1:
+        for c in text:
+            guess -= 1
+            if c == guess:
+                guess_word += c  
+            elif c == ' ':
+                guess_word += " "
+            else:
+                guess_word += "_" 
+            print(guess_word) 
+
+    if guess == 0:
+        game_status = True
+        print(guess_word)
