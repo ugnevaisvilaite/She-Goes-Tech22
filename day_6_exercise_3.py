@@ -12,7 +12,7 @@
 
 # PS Split and join operations could be useful here.
 
-text= input("Enter your text: ")
+text= input("Enter your text: ").lower()
 separated=text.split(" ")
 whole_text=[]
 for n in separated:
