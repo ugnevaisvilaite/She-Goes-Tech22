@@ -60,9 +60,6 @@
 # Hint: what numbers do we have to check?
 
 
-from re import T
-
-
 prime = int(input("Enter number to check if it is prime: "))
 flag = True
 
