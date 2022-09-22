@@ -17,8 +17,8 @@ def add_mult(*args):
     first_element=number_list[0]
     second_element=number_list[1]
     last_element=number_list[-1]
-    print(first_element, second_element,last_element)
+    # print(first_element, second_element,last_element)
     calc=(first_element+second_element)*last_element
     return calc
 
-print(add_mult(2,5,4))
+print(add_mult(2,2,4,7))
