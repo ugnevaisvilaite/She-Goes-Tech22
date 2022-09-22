@@ -4,9 +4,7 @@
 # PS You can start with a one-word solution from the beginning, but the full solution will ignore whitespace and uppercase and lowercase letters.
 
 # is_palindrome ("Alus ari i ra    sula") -> True
-
 # is_palindrome("ABa") -> True
-
 # is_palindrome("nava") -> False
 
 
