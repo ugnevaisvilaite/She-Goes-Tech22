@@ -13,7 +13,7 @@ entered_text=input("Enter a word or sentence to check if it is read equally from
 
 def is_palindrome (entered_text):
     entered_text = entered_text.replace(" ", "").lower()
-    reversed_text = entered_text[::-1]
-    return entered_text == reversed_text
+    # reversed_text = entered_text[::-1]
+    return entered_text == entered_text[::-1]
 
 print(is_palindrome(entered_text))
