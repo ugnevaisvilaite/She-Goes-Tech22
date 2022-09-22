@@ -4,6 +4,7 @@
 # so remember we already know how to find a single prime number 
 # from previous exercise
 
+ #1 VERSION
     
 prime_range = int(input("Enter how many prime numbers want in your list: "))
 start=int(input("Enter the start number for range: "))
@@ -21,3 +22,24 @@ while n<prime_range:
         n+=1      
 print(prime_list)
         
+#2 VERSION - tried with function
+
+
+# prime_range = int(input("Enter how many prime numbers want in your list: "))
+# start=int(input("Enter the start number for range: "))
+# prime_list=[]
+
+# def is_prime(prime_range, start, n=0):
+#     while n<prime_range:
+#         start+=1
+#         count=1
+#         for j in range(2,start):
+#             if start%j==0: #not prime numbers
+#                 count=0
+#                 break
+#         if count==1: #prime number
+#             prime_list.append(start)
+#             n+=1 
+#     return prime_list
+
+# print(is_prime(prime_range, start))
