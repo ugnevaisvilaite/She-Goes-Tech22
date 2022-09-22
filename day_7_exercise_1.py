@@ -10,15 +10,11 @@
 
 
 def add_mult(*args):
-    number_list = []
-    for arg in args:
-        number_list.append(arg)
-        number_list.sort()
+    number_list=list(args)
+    number_list.sort()
     first_element=number_list[0]
     second_element=number_list[1]
     last_element=number_list[-1]
-    # print(first_element, second_element,last_element)
-    calc=(first_element+second_element)*last_element
-    return calc
+    return (first_element+second_element)*last_element
 
 print(add_mult(2,2,4,7))
