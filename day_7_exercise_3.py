@@ -19,9 +19,7 @@
 # More test examples:
 
 # get_city_year(1000, 2, -50, 5000) -> -1 
-
 # get_city_year(1500, 5, 100, 5000) -> 15
-
 # get_city_year(1500000, 2.5, 10000, 2,000,000) -> 10
 
 # the trickiest case is something like this
