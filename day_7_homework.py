@@ -42,7 +42,6 @@ def get_city_year(p0,perc, delta, p):
             break
         years +=1
         p0 = round(full_population)
-        # print(full_population) #just to check
     return years
  
  
