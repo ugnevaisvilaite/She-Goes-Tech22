@@ -46,5 +46,5 @@ def get_city_year(p0,perc, delta, p):
     return years
         
 print(get_city_year(1000, 3, 50, 1600))
-print(get_city_year(1000, -3, 50, 1600))        
-print(get_city_year(1000, -6, 50, 1600))
+print(get_city_year(1000, -3, 50, 1600)) #3% around 30 people, population increases
+print(get_city_year(1000, -6, 50, 1600)) #6% around 60 people, population decreases
