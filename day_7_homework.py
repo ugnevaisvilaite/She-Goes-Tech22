@@ -26,7 +26,7 @@
 # get_city_year(1000, -3, 50, 2000) -> -1 is the correct answer but how to get there?
 #
 
-def new_population(p0, perc, delta):
+def current_population(p0, perc, delta):
     percentage = round(perc*0.01,2)
     full_population = p0+(p0*percentage)+delta
     return full_population
@@ -36,7 +36,7 @@ def get_city_year(p0,perc, delta, p):
     years=0
     full_population=0
     while full_population < p:
-        full_population = new_population(p0,perc,delta)
+        full_population = current_population(p0,perc,delta)
         if full_population <= p0:
             return -1
             break
@@ -45,4 +45,4 @@ def get_city_year(p0,perc, delta, p):
         # print(full_population) #just to check
     return years
         
-print(get_city_year(1000, 2, 50, 1200))
+print(get_city_year(1000, -3, 50, 1200))
