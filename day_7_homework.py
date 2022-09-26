@@ -44,7 +44,13 @@ def get_city_year(p0,perc, delta, p):
         p0 = round(full_population)
         # print(full_population) #just to check
     return years
+ 
+ 
         
-print(get_city_year(1000, 3, 50, 1600))
-print(get_city_year(1000, -3, 50, 1600)) #3% around 30 people, population increases
-print(get_city_year(1000, -6, 50, 1600)) #6% around 60 people, population decreases
+print(get_city_year(1000, 3, 50, 1600)) #-> 7
+print(get_city_year(1000, -3, 50, 1600)) #3% around 30 people, population increases ->76
+print(get_city_year(1000, -6, 50, 1600)) #6% around 60 people, population decreases -> -1
+
+print(get_city_year(1000, 2, -50, 5000)) #-> -1 
+print(get_city_year(1500, 5, 100, 5000)) #-> 15
+print(get_city_year(1500000, 2.5, 10000, 2000000)) #-> 10
