@@ -28,7 +28,7 @@
 
 def current_population(p0, perc, delta):
     percentage = round(perc*0.01,3)
-    full_population = p0+(p0*percentage)+delta
+    full_population = int(p0+(p0*percentage)+delta)
     return full_population
 
 
