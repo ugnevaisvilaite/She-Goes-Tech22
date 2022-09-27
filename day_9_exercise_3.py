@@ -32,9 +32,12 @@ def is_pangram(text, alphabet='abcdefghijklmnopqrstuvwxyz'):
         return True
     return False
 
-print(is_pangram("The five boxing wizards jump quickly"))
-print(is_pangram("Not a pangram"))
+print(is_pangram("The five boxing wizards jump quickly")) #true
+print(is_pangram("Not a pangram")) #true 
+
+a_lv="aābcčdeēfgģhiījkķlļmnņoprsštuūvzž"
+print(is_pangram("Įlinkdama fechtuotojo špaga sublykčiojusi pragręžė apvalų arbūzą", alphabet=a_lv)) #false
 
 a_lt="aąbcčdeęėfghiįyjklmnoprsštuųūvzž"
-print(is_pangram("Įlinkdama fechtuotojo špaga sublykčiojusi pragręžė apvalų arbūzą", alphabet=a_lt))
+print(is_pangram("Įlinkdama fechtuotojo špaga sublykčiojusi pragręžė apvalų arbūzą", alphabet=a_lt)) #true
 
