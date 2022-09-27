@@ -27,7 +27,7 @@ print(get_common_elements("abc", ['a', 'b'], ('b', 'c')))
 #2.b
 def get_common_elements_second(*seq):
     if len(seq) == 0:
-        return print("end")   #dont know how to make it print "end" or "not working"
+        return -1   #dont know how to make it print "end" or "not working"
     return tuple((set(seq[0]).intersection(*seq[1:])))
 
 print(get_common_elements_second("abc", ['a', 'b', 'c'], ('b', 'c')))
