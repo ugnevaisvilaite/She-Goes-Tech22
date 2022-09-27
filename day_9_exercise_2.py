@@ -15,3 +15,7 @@
 # BONUS:  make a function that can handle an arbitrary number of input sequences
 # so function which takes any number of sequences and returns a tuple with common elements
 # get_common_elements(seq1, seq2, seq3, seq4, seq5, seq6, seq7) etc :), so just like print takes any number of values
+
+
+def get_common_elements(seq1, seq2, seq3):
+    
