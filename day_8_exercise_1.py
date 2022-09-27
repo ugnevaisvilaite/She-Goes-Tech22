@@ -12,15 +12,20 @@
 
 entered_text=input("Enter your text: ")
 
-char_count={}
+#version 1
 
-def get_char_count(entered_text):
-    entered_text = entered_text.replace(" ", "").lower()
-    for c in entered_text:
-        if c in char_count:
-            char_count[c] += 1
-        else:
-            char_count[c] = 1
-    return char_count
+# def get_char_count(entered_text):
+#     char_count={}
+#     for c in entered_text:
+#         if c in char_count:
+#             char_count[c] += 1
+#         else:
+#             char_count[c] = 1
+#     return char_count
 
-print(get_char_count(entered_text))
+# print(get_char_count(entered_text))
+
+#version 2
+from collections import Counter # generally we import all modules at the top of the file
+my_counter = Counter(entered_text)
+print(my_counter)
