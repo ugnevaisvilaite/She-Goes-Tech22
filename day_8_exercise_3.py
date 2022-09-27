@@ -40,7 +40,7 @@ def clean_dict_value(d, bad_val):
             new_dict[key] = d[key]
     return new_dict
 
-# print(clean_dict_value(dictionary,5))
+print(clean_dict_value(dictionary,5))
 
 
 # b part
