@@ -31,5 +31,5 @@ def get_common_elements_second(*seq):
     return tuple((set(seq[0]).intersection(*seq[1:])))
 
 print(get_common_elements_second("abc", ['a', 'b', 'c'], ('b', 'c')))
-print(get_common_elements_second("572hsbd9i2", ['7', 'z', 'c', 'i'], ('b', 'c','i', '7')))
+print(get_common_elements_second("572hsbd9i2", ['7', 'z', 'c', 'i'], ('b', 'c','i', '7'),"happiness"))
 print(get_common_elements_second("572hsbd9i2", [], ('b', 'c','i', '7')))
