@@ -13,3 +13,10 @@
 # the easy way is to use sets and set operations 😊
 
 # either approach is acceptable
+
+def check_unique_characters(arg_1, arg_2, arg_3):
+    a=(set(arg_1) & set(arg_2)) - set(arg_3)
+    return "".join(sorted(a))
+
+print(check_unique_characters("abcf", "fab", "boo"))
+

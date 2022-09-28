@@ -35,7 +35,7 @@ else:
     print("Not all characters are in the second string")
     
     
-if len(count) == a_len:  
+if len(count) == a_len:
     print("All character counts in the second string")
     print(count)
 else:
