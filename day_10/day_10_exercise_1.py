@@ -55,12 +55,6 @@ class Song:
         self.lyrics = lyrics
         print(f" New Song made: {self.title} - {self.author} ")
         
-    def _print_lyrics(self, lyrics, max_lines=-1):  # these lyrics will be processed already
-        if max_lines == -1:
-            max_lines = len(lyrics)
-        for i in lyrics[:max_lines]:
-            print(i)
-        
     def sing(self):
         for i in self.lyrics:
             print(i)
