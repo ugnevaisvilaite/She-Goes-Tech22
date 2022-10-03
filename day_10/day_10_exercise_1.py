@@ -29,7 +29,6 @@
 
 # Example:
 
-
 # ziemelmeita = Song("Ziemeļmeita", "Jumprava", ["Gāju meklēt ziemeļmeitu","
 # Garu, tālu ceļu veicu"])
 
@@ -53,22 +52,70 @@ class Song:
         self.title = title
         self.author = author
         self.lyrics = lyrics
+        if title == "":
+            self.title = "Unknown"
+        if author == "":
+            self.author = "Unknown"
         print(f" New Song made: {self.title} - {self.author} ")
         
-    def sing(self):
-        for i in self.lyrics:
-            print(i)
+    def sing(self, all_lines=0):
+        self.all_lines=self.lyrics
+        if all_lines >= -1:
+            print(*self.all_lines, sep="\n")
+        else:
+            pass
         return self
 
         
-    def yell(self):
-        for i in self.lyrics:
-            print(i.upper())
+    def yell(self, all_lines=0):
+        if all_lines >= -1:
+            lines_upper = [all_lines.upper() for all_lines in self.lyrics]
+            print(*lines_upper, sep="\n")
+        else:
+            pass
         return self
- 
+    
         
         
 ziemelmeita = Song("Ziemeļmeita", "Jumprava", ["Gāju meklēt ziemeļmeitu","Garu, tālu ceļu veicu"])
+        
+ziemelmeita = Song("Ziemeļmeita", "", ["Gāju meklēt ziemeļmeitu","Garu, tālu ceļu veicu"])
 
 print(ziemelmeita.sing().yell())
 
+
+
+# 2. Rap class
+# For those feeling comfortable with class syntax, create a Rap class that inherits from Song
+
+# # no new constructor method is necessary (you can if you want)
+
+#  add a new method break_it with two default parameters max_lines=-1 and drop equal to "yeah", which is similar to sing, but adds a drop after each word .
+
+# Example:
+
+# zrap = Rap("Ziemeļmeita", "Jumprava", ["Gāju meklēt ziemeļmeitu","
+
+# Garu, tālu ceļu veicu"])
+
+# zrap.break_it(1, "yah")
+
+# Ziemeļmeita - Jumprava
+
+# Gāju YAH meklēt YAH ziemeļmeitu YAH
+
+class Rap(Song):
+    
+    def break_it(self, all_lines=-1, drop="yeah"):
+        print(f" Song playing: {self.title} - {self.author} ")
+        for line in self.lyrics:
+            print(line.replace(' ', f' {drop} '), sep="\n")
+            all_lines -= 1
+            if all_lines == 0:
+                break
+        return self
+    
+zrap = Rap("Ziemeļmeita", "Jumprava", ["Gāju meklēt ziemeļmeitu","Garu, tālu ceļu veicu"])
+
+zrap.break_it(1, "yah").yell()
+zrap.break_it(2, "yaa").yell()
