@@ -5,11 +5,20 @@
 
 # check file_line_len("sherlock_holmes_adventures.txt") -> 12305
 
+def file_line_len(fpath):
+    line_length = 0
+    with open(fpath) as f:
+        for line in f:
+            line_length += 1
+    return line_length
+
+print(file_line_len("day_12/sherlock_holmes_adventures.txt"))
+
 # 1b -> write the function get_text_lines(fpath), which returns a list with only those lines that contain text.
 
 # So we want to avoid/filter out those lines that contain whitespace
 
-# PS preferably use encoding = "utf-8" when reading 
+
 
 
 
@@ -45,14 +54,5 @@
 # you can use csv module for this, but it is not necessary
 
 
-#a
-def file_line_len(fpath):
-    line_length = 0
-    with open(fpath) as f:
-        for line in f:
-            line_length += 1
-    return line_length
-
-print(file_line_len("./sherlock_holmes_adventures.txt"))
 
         
