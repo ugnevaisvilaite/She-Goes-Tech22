@@ -1,0 +1,1 @@
+with open("sherlock_holmes_adventures,txt", encoding='utf-8', mode="w") as f:
