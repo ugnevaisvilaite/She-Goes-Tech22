@@ -58,7 +58,7 @@ class Song:
             self.author = "Unknown"
         print(f" New Song made: {self.title} - {self.author} ")
         
-    def sing(self, all_lines=0):
+    def sing(self, all_lines=-1):
         self.all_lines=self.lyrics
         if all_lines >= -1:
             print(*self.all_lines, sep="\n")
@@ -67,7 +67,7 @@ class Song:
         return self
 
         
-    def yell(self, all_lines=0):
+    def yell(self, all_lines=-1):
         if all_lines >= -1:
             lines_upper = [all_lines.upper() for all_lines in self.lyrics]
             print(*lines_upper, sep="\n")
@@ -117,5 +117,5 @@ class Rap(Song):
     
 zrap = Rap("Ziemeļmeita", "Jumprava", ["Gāju meklēt ziemeļmeitu","Garu, tālu ceļu veicu"])
 
-zrap.break_it(1, "yah").yell()
+zrap.break_it(1, "yah").sing()
 zrap.break_it(2, "yaa").yell()

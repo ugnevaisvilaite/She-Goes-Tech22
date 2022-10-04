@@ -17,7 +17,7 @@ import random
 
 def get_shuffled_cards():
     symbol = [2,3,4,5,6,7,8,9,10,"J","Q","K", "A"]
-    colors = ['heart', 'diamonds', 'spades', 'clubs']
+    colors = ["clubs (♣)", "diamonds (♦)", "hearts (♥)", "spades (♠)"]
     cards = [(s, c) for s in symbol for c in colors]
     
     random.shuffle(cards)
@@ -25,6 +25,6 @@ def get_shuffled_cards():
 
 
 if __name__ == '__main__':
-    cards = get_shuffled_cards()
-    print(cards[:5])
-    print(cards[:52])
+    card = get_shuffled_cards()
+    print(card[:5])
+    print(card[:2])
