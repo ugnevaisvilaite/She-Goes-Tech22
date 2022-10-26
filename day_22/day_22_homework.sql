@@ -1,3 +1,5 @@
+#LESSON 6
+
 SELECT title, domestic_sales, international_sales 
 FROM movies
   JOIN boxoffice
@@ -91,6 +93,8 @@ FROM movies
 INNER JOIN boxoffice
 ON movies.id = boxoffice.movie_id
 GROUP BY director;
+
+#LESSON 13
 
 INSERT INTO movies 
 VALUES (15, "Toy Story 4", "John Lasseter", 2010, 123);
