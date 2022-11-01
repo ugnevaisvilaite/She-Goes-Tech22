@@ -5,9 +5,9 @@
 * will require to join with the customer table
 * will require to join with the invoice table
 
+
 SELECT EmployeeId,
-	e.FirstName,
-	e.LastName,
+	e.FirstName || " " || e.LastName AS employees,
 	sum(total) as Total_sales	
 FROM employees e
 JOIN invoices i  ON e.EmployeeId  = i.CustomerId 
