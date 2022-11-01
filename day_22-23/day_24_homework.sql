@@ -5,8 +5,9 @@
 * will require to join with the customer table
 * will require to join with the invoice table
 
-SELECT InvoiceId,
-	EmployeeId,
+SELECT EmployeeId,
+	e.FirstName,
+	e.LastName,
 	sum(total) as Total_sales	
 FROM employees e
 JOIN invoices i  ON e.EmployeeId  = i.CustomerId 
@@ -20,10 +21,11 @@ group by EmployeeId
 * will requiret to join with invoice items table
 * will require to join with the invoice table
 
-SELECT InvoiceId,
-	SUBSTRING(InvoiceDate, 1, 4) as Year,
-	sum(total) as Total_sales
+SELECT 
+	it.InvoiceId,
+	count(*) AS Total_sales
 FROM tracks t 
 JOIN invoice_items it  ON t.TrackId  = it.TrackId 
-JOIN invoices i  ON t.InvoicesId = i.InvoicesId
-group by Year
+JOIN invoices i  ON it.InvoiceId  = i.InvoiceId 
+group by it.InvoiceId
+ORDER BY Total_sales DESC 
