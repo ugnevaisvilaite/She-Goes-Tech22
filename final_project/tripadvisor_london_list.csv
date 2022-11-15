@@ -1,34 +1,35 @@
 ,Hotel,Ratings,No_of_Reviews,"Price, €"
-0,Sponsored      YOTEL London Shoreditch,9,684,112
-1,1. The Montcalm Royal London House,10,"3,351",208
-2,2. Park Grand London Hyde Park,8,"3,362",144
-3,3. Park Grand Paddington Court,9,"3,206",185142
-4,4. The Resident Covent Garden,10,"1,241",295
-5,5. Travelodge London City hotel,9,"2,376",59
-6,"Sponsored      The Biltmore Mayfair, LXR Hotels & Resorts",8,173,930
-7,6. Canopy by Hilton London City,10,420,195
-8,7. Hard Rock Hotel London,9,"2,231",388
-9,8. The Montcalm London Marble Arch,10,"3,810",477
-10,9. The Tower Hotel,8,"12,227",146
-11,10. Travelodge London Docklands Central,8,568,78
-12,"11. The Clermont, Charing Cross",10,"6,711",387
-13,12. Leonardo Royal Hotel London St. Paul's,8,"1,451",225
-14,13. Leonardo Royal London Tower Bridge,8,"2,145",169
-15,14. Holiday Inn London - West,9,"1,280",99
-16,15. Royal National Hotel,6,"10,756",218
-17,16. The Montague on The Gardens,10,"5,445",336314
-18,17. Travelodge London Central City Road,8,"2,198",74
-19,18. Park Plaza Westminster Bridge London,9,"23,706",302
-20,19. Millennium Gloucester Hotel London Kensington,8,"6,712",154144
-21,"20. The Standard, London",9,494,261
-22,Sponsored      Mercure London Bridge,9,438,203
-23,21. Travelodge London Manor House,9,262,94
-24,22. The Bailey's Hotel London Kensington,9,"1,923",247
-25,23. The Clarendon,8,"2,943",155
-26,24. The President Hotel,7,"4,702",194
-27,25. Grand Royale London Hyde Park,8,"5,416",149131
-28,26. Premier Inn London Hendon (The Hyde) hotel,8,841,75
-29,27. Travelodge London Covent Garden,8,"12,301",90
-30,28. St. Athans Hotel,8,855,117109
-31,29. Novotel London West,8,"5,318",186
-32,30. easyHotel London City Shoreditch,8,343,99
+0,YOTEL London Shoreditch,9,685,112
+1,The Montcalm Royal London House,10,3356,207
+2,Park Grand London Hyde Park,8,3362,159
+3,The Resident Covent Garden,10,1243,302
+4,Park Grand Paddington Court,9,3212,145
+5,Travelodge London City hotel,9,2378,59
+6,"The Biltmore Mayfair, LXR Hotels & Resorts",8,173,930
+7,Canopy by Hilton London City,10,424,194
+8,The Montcalm London Marble Arch,10,3812,473
+9,Hard Rock Hotel London,9,2243,386
+10,"The Clermont, Charing Cross",10,6724,385
+11,The Tower Hotel,8,12242,156
+12,Novotel London Tower Bridge,8,3709,175
+13,Travelodge London Docklands Central,8,576,74
+14,Leonardo Royal Hotel London St. Paul's,8,1457,214
+15,Leonardo Royal London Tower Bridge,8,2147,178
+16,Holiday Inn London - West,9,1281,99
+17,Royal National Hotel,6,10766,217
+18,Park Plaza Westminster Bridge London,9,23720,301
+19,Travelodge London Central City Road,8,2198,65
+20,The Montague on The Gardens,10,5449,347
+21,"The Standard, London",9,495,306
+22,Millennium Gloucester Hotel London Kensington,8,6715,143
+23,The Resident Kensington,9,4753,200
+24,Travelodge London Manor House,9,264,96
+25,The Bailey's Hotel London Kensington,9,1923,233
+26,The Clarendon,8,2944,154
+27,Travelodge London Covent Garden,8,12307,91
+28,Grand Royale London Hyde Park,8,5417,139
+29,The President Hotel,7,4704,193
+30,Premier Inn London Hendon (The Hyde) hotel,8,841,82
+31,St. Athans Hotel,8,855,109
+32,Novotel London West,8,5326,164
+33,Mercure London Bridge,9,440,188
